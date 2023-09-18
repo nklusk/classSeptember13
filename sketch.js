@@ -1,39 +1,29 @@
-let xPosition; 
-let speed = 4;
-let diameter = 40;
-//"let" defines a variable
-//define at the very beginning of the program because
-//you want to use it in all sections of the program
-//aka a global variable
-//"scope of variable:" range of possible definitions for variable
-//for variables only needed in a certain section of your
-//variable, 'let' can be placed under that function
-//var also does the same ting as let
+
 
 function setup() {
   createCanvas(400, 400);
-  xPosition = width/2;
-  console.log(xPosition)
-  //displays stuff in the console (f12 in browser)
-  
+  //angleMode(DEGREES);
 }
 
 function draw() {
   background(220, 10, 30);
-  ellipse(xPosition, height/2, diameter);
-  //frame count: number of frames that have been displayed: superfast (60fps)
-  //you can also make your own variable
 
+ 
+  // push();
+  //   translate(40, 40);
+  //   rotate(45);
+  //   rect(0, 0, 20, 20);
+  // pop();
 
+  //let color = map(mouseY, 0, height, 0, 255);
+//   let color = random(0, [255
+// ])
+//   fill(230);
+//   rect(color, mouseX, 20, 20);
 
+function mouseClicked() {
+  background(0);
   
-  if (xPosition >= width || xPosition <= 0) {
-    speed = speed * -1;
-    
-  }
-// || means or
-  xPosition += speed;
 
-  //x += speed; same thing as x = x + speed
-    
+}
 }
